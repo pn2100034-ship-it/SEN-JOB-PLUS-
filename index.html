@@ -1,1 +1,203 @@
-https://docs.google.com/forms/d/e/1FAIpQLSe75vgPsNrG5U73oWUcDu3BeSU0d8fx_olfAgLMFHkR_Lm2sw/viewform
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#159447">
+  <title>SEN JOB PLUS</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f5;
+      color: #222;
+    }
+    header {
+      background: #159447;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+    }
+    header h1 { margin: 0 0 10px; }
+    header p { margin: 0; }
+    main {
+      max-width: 750px;
+      margin: auto;
+      padding: 20px 15px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #00000010;
+    }
+    h2 { color: #159447; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .service {
+      background: #eaf6ee;
+      padding: 15px 8px;
+      border-radius: 9px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .green { background: #159447; color: white; }
+    .blue { background: #1769aa; color: white; }
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      margin: 7px 0 13px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+    label { font-weight: bold; }
+    footer {
+      background: #159447;
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SEN JOB PLUS</h1>
+  <p>Ensemble, construisons les opportunités de demain.</p>
+</header>
+
+<main>
+  <section>
+    <h2>Bienvenue sur SEN JOB PLUS</h2>
+    <p>
+      Votre plateforme numérique multiservices au Sénégal.
+      Trouvez un emploi, découvrez des services et contactez
+      des prestataires professionnels.
+    </p>
+  </section>
+
+  <section>
+    <h2>Nos domaines d'activité</h2>
+    <div class="services">
+      <div class="service">🏗️ Construction</div>
+      <div class="service">🚚 Transport</div>
+      <div class="service">🌾 Agriculture et élevage</div>
+      <div class="service">💻 Informatique</div>
+      <div class="service">🏠 Immobilier</div>
+      <div class="service">🛍️ Commerce</div>
+      <div class="service">🍽️ Restauration</div>
+      <div class="service">📚 Formation</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Espace client</h2>
+    <a class="btn blue" href="#demande">Faire une demande de service</a>
+  </section>
+
+  <section>
+    <h2>Devenir prestataire</h2>
+    <p>
+      Vous êtes un professionnel, un indépendant ou une entreprise ?
+      Inscrivez-vous pour présenter vos services sur SEN JOB PLUS.
+    </p>
+    <a class="btn green"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSe75vgPsNrG5U73oWUcDu3BeSU0d8fx_olfAgLMFHkR_Lm2sw/viewform"
+       target="_blank" rel="noopener">
+       S'inscrire comme prestataire
+    </a>
+  </section>
+
+  <section id="demande">
+    <h2>Faire une demande de service</h2>
+    <p>Remplissez ce formulaire pour envoyer votre demande sur WhatsApp.</p>
+
+    <form id="clientForm">
+      <label>Votre nom</label>
+      <input type="text" id="nom" placeholder="Votre nom complet" required>
+
+      <label>Votre téléphone</label>
+      <input type="tel" id="telephone" placeholder="Votre numéro" required>
+
+      <label>Service souhaité</label>
+      <select id="service" required>
+        <option value="">Choisir un service</option>
+        <option>Construction et rénovation</option>
+        <option>Transport et livraison</option>
+        <option>Agriculture et élevage</option>
+        <option>Informatique et numérique</option>
+        <option>Immobilier</option>
+        <option>Commerce et distribution</option>
+        <option>Restauration</option>
+        <option>Formation et conseil</option>
+      </select>
+
+      <label>Décrivez votre besoin</label>
+      <textarea id="description" rows="4"
+        placeholder="Expliquez votre demande..." required></textarea>
+
+      <button class="btn green" type="submit">
+        Envoyer sur WhatsApp
+      </button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Contactez SEN JOB PLUS</h2>
+    <p>WhatsApp et téléphone : +221 77 715 81 26</p>
+    <a class="btn green"
+       href="https://wa.me/221777158126"
+       target="_blank" rel="noopener">
+       Nous contacter sur WhatsApp
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p><strong>SEN JOB PLUS</strong></p>
+  <p>Ensemble, construisons les opportunités de demain.</p>
+  <p>© 2026 SEN JOB PLUS - Tous droits réservés.</p>
+</footer>
+
+<script>
+  document.getElementById("clientForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nom = document.getElementById("nom").value.trim();
+    const telephone = document.getElementById("telephone").value.trim();
+    const service = document.getElementById("service").value;
+    const description = document.getElementById("description").value.trim();
+
+    const message =
+      "Bonjour SEN JOB PLUS !%0A" +
+      "Nom : " + encodeURIComponent(nom) + "%0A" +
+      "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+      "Service : " + encodeURIComponent(service) + "%0A" +
+      "Besoin : " + encodeURIComponent(description);
+
+    window.open("https://wa.me/221777158126?text=" + message, "_blank");
+  });
+</script>
+
+</body>
+</html>
